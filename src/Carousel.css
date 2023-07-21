@@ -1,0 +1,41 @@
+/* Regular styles for desktop */
+.carousel {
+  display: flex;
+  flex-direction: row;
+}
+
+.image {
+  width: 500px;
+  height: 500px;
+}
+
+.btn {
+}
+
+/* Media query for mobile devices with a maximum width of 768px */
+@media (max-width: 900px) {
+  .carousel {
+    display: block; /* Change the display to block to stack images vertically */
+  }
+
+  .image {
+    width: 100%; /* Set the image width to fill the entire screen width */
+    max-width: 400px; /* Set a maximum width to prevent images from getting too large */
+    height: auto; /* Let the height adjust automatically to maintain aspect ratio */
+    margin: 10px auto; /* Center the images horizontally and add some space between them */
+  }
+
+  .left-btn {
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    margin: 20px;
+  }
+
+  .right-btn {
+    position: absolute;
+    top: 35%;
+    right: 35%;
+    margin: 20px;
+  }
+}
